@@ -1,0 +1,43 @@
+[
+    {
+        "id": 1,
+        "company": "Populus Global Solutions Inc.",
+        "role": "Co-op Software Developer",
+        "type": "Co-op", 
+        "location": "Fredericton, New Brunswick, Canada",
+        "startDate": "September 2026",
+        "endDate": null,
+        "current": true,
+        "highlights": [
+        ],
+        "skills": ["Java", "PostgreSQL", "Apache Struts", "JSP", "JUnit", "HTML/CSS", "CI/CD", "Git"]
+    },
+    {
+        "id": 2,
+        "company": "Analytics Everywhere Lab (AELab) at the University of New Brunswick",
+        "role": "Research Assistant (AI Developer)",
+        "type": "Part-time", 
+        "location": "Fredericton, New Brunswick, Canada",
+        "startDate": "Sep 2025",
+        "endDate": "Mar 2026",
+        "current": false,
+        "highlights": [
+            "Engineered a MERN full-stack blog platform with an integrated content management system (CMS) enabling efficient administration and publication of blog content.",
+            "Designed and developed an AI-driven medical RAG chatbot leveraging Electronic Health Records (EHR) to generate patient summaries, predictive insights, and clinical recommendations for healthcare professionals.", 
+            "Applied advanced AI concepts, including Retrieval-Augmented Generation (RAG), AI agents, and machine learning algorithms, to develop intelligent and scalable solutions."
+        ],
+        "skills": []
+    }, 
+    {
+        "id": 3,
+        "company": "Government of New Brunswick / Gouvernement du Nouveau-Brunswick",
+        "role": "Centres of Excellence Experiential Learning Intern",
+        "type": "Internship", 
+        "location": "Fredericton, New Brunswick, Canada",
+        "startDate": "May 2025",
+        "endDate": "Aug 2025",
+        "current": false,
+        "highlights": [],
+        "skills": []
+    }
+]

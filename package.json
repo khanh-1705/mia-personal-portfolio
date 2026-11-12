@@ -9,11 +9,13 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@gura_ame/starry-sky": "^1.0.5",
     "next": "16.4.0",
     "react": "19.3.0",
     "react-dom": "19.3.0"
   },
   "devDependencies": {
+    "@h0rn0chse/night-sky": "^2.1.0",
     "@tailwindcss/turbopack": "^4",
     "@types/node": "^20",
     "@types/react": "^19",

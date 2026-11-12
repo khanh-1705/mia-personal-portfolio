@@ -1,37 +1,27 @@
 @import "tailwindcss";
 
 :root {
-  --background: linear-gradient(#ff9a8b, #ffc3a0, #fecf6a, #a1e3ff);
-  /* --foreground: #171717; */
-}
-
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
+  --background: linear-gradient(#0a2d43, #56ffa4, #b084ff, #79c7ff);
   --font-bricolage: var(--font-bricolage-grotesque); 
   --font-sans: var(--font-instrument-sans); 
-  --font-jetBrains: var(--font-jetBrains-mono); 
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: linear-gradient(#0a2d43, #56ffa4, #b084ff, #79c7ff);
-    /* --foreground: #ededed; */
-  }
+  --font-jetBrains: var(--font-jetBrains-mono);
 }
 
 /* General */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0; /* Clear browser default overrides */
+}
+
 html, body {
   width: 100%;
   height: 100%;
-  margin: 0; 
-  padding: 0; 
   color: #eaf6ff; 
 }
 
 body {
   background: var(--background);
-  color: var(--foreground);
   min-height: 100vh;
   overflow-y: auto; 
 }
@@ -40,18 +30,11 @@ a:-webkit-any-link {
   cursor: pointer; 
 }
 
-*, *::before, *::after {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0; /* Clear browser default overrides */
-}
-
 /* Navbar */
 nav {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
-    justify-content: space-between;
     gap: 16px;
     padding: 10px 12px 10px 28px;
     border-radius: 999px;
@@ -67,10 +50,17 @@ nav .logo {
   letter-spacing: -0.02em;
 }
 
+.logo img {
+  width: 100px; 
+  height: 56px;
+  padding: none; 
+}
+
 nav .navlink {
     display: flex;
     flex-wrap: wrap;
     align-items: center;
+    margin-left: auto; 
     gap: 28px;
 }
 
@@ -81,6 +71,11 @@ nav ul {
   font-weight: 500;
 }
 
+nav li {
+  display: inline-block; 
+  padding: 20px; 
+}
+
 nav a {
   text-decoration: none; 
   color: rgb(234, 246, 255);
@@ -89,21 +84,20 @@ nav a {
 nav a:hover {
   text-decoration: underline;
   text-underline-offset: 6px;
-}
+} 
 
 /* Hero */
 .hero {
   position: relative;
-    z-index: 2;
-    flex: 1 1 0%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 28px;
-    padding: 48px clamp(20px, 5vw, 64px) 220px;
-    max-width: 1240px;
-    width: 100%;
-    height: 994px;
+  z-index: 2;
+  flex: 1 1 0%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 28px;
+  padding: 48px clamp(20px, 5vw, 64px) 220px;
+  max-width: 1240px;
+  width: 100%;
 }
 
 .note {
@@ -140,7 +134,7 @@ nav a:hover {
   font-family: "Bricolage Grotesque", sans-serif;
   font-size: clamp(46px, 8vw, 116px);
   line-height: 0.98;
-  letter-spacing: -0.035em;
+  letter-spacing: -0.1em;
   color: rgb(234, 246, 255);
 }
 
@@ -184,9 +178,53 @@ nav a:hover {
     font-size: 16px;
 }
 
-/* Sections */
+/* General Section Style*/
 .section {
   font: var(--font-sans); 
-  font-weight: 500;
-  font-size: 20px; 
+}
+
+.section h1 {
+  font-weight: 700;
+  font-size: 48px; 
+}
+
+/* Selected Work Experience Section */
+#project {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  background: #061c2b;
+  color: rgb(234, 246, 255);
+  font-family: "Instrument Sans", system-ui, sans-serif;
+  font-size: 18px;
+  line-height: 1.65;
+  transition: background 0.6s, color 0.6s;
+  overflow-x: hidden;
+}
+
+/* Work Experience Section */
+.work-experience {
+  list-style: none; 
+  padding: 0;
+  margin: 0;
+  display: flex; 
+  gap: 10px;
+}
+
+.work-experience .work-list-items {
+  flex: 1 1 320px;
+  display: flex;
+  flex-direction: column;
+  border-radius: 28px;
+  background: rgb(10, 45, 67);
+  border: 1px solid rgba(121, 199, 255, 0.2);
+  color: rgb(234, 246, 255);
+  text-align: center;
+}
+
+/* Contact Section */
+#contact {
+  background: var(--background);
+  min-height: 100vh;
+  overflow-y: auto; 
 }
