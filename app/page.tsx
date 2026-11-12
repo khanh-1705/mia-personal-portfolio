@@ -123,7 +123,7 @@ export default function Home() {
           <p>[One sentence on what you build and who it is for.] Currently looking for a [role] where I can [what you want to do].</p>
           <div className="hero-btn">
             <a href="#work" className="work-btn">View Work →</a>
-            <a href="#" className="contact-btn">Download my resume!</a>
+            <a href="/Mia (Gia-Khanh) Truong - Resume.pdf" download className="contact-btn">Download my resume!</a>
           </div>
         </div>
       </header>
